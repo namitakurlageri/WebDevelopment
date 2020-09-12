@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="StyleSheet1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+   <link rel="stylesheet" type="text/css" href="css/projectstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/share_style.css">
+
+ 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="main">
+<div>
+    <nav class="navbar navbar-inverse navbar-change">
+      <div class="container-fluid">
+        <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>      
+    <a class="navbar-brand" href="#"><img src="brillio.png" alt="logo" class="image"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li></li>
+          <li class="dropdown ">
+        <a href="#" id="color" class="dropdown-toggle active" data-toggle="dropdown">
+          Cx Wizard
+          
+        </a>
+        <ul class="dropdown-menu" id="dm">
+          <li><a href="#">New Assessment</a></li>
+          <li><a href="#">Drafts</a></li>
+          <li><a href="#">Historic Cx Assessments</a></li>
+    <li><a href="#">New Assessments</a></li>
+        </ul>
+      </li>
+    <li ><a href="#" class="dropdown-border">Experience Audit</a></li>
+    <li ><a href="#" class="dropdown-border">Innovation Mapper</a></li>
+    <li  ><a href="#" class="dropdown-border">Library</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"  class="dropdown-toggle" data-toggle="dropdown"><img src="Group 734.png" alt="logo" class="notification-img"></a><ul class="dropdown-menu">
+            <li><a href="#">David Gambon</a></li>
+            <li><a href="#">Drafts</a></li>
+            <li><a href="#">Settings</a></li>
+      <li><a href="#">Log Out</a></li>
+          </ul></li>
+          
+          <li><a href="#"  class="dropdown-toggle" data-toggle="dropdown"><span class="space">David G</span><img src="Group 738.png" alt="user" class="user-img"> </a> <ul class="dropdown-menu">
+          <li><a href="#">David Gambon</a></li>
+          <li><a href="#">Drafts</a></li>
+          <li><a href="#">Settings</a></li>
+    <li><a href="#">Log Out</a></li>
+        </ul></li>
+        </ul>
+    </div>
+      </div>
+    </nav>
+  
+  <div class="share">
+   <button id="myBtn">share</button>
+   </div>
+<div class="container">
+
+<div id="accordion">
+
+  <h5 class="head1 top1 active1 noborder" ><img  class="ico active2" src="people-active.png" >PEOPLE</h5>
+  
+
+   <div class="vl">
+      
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+	<form>
+    <tbody class="question-ans" id="peopleSec">
+
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+         <td> <label><input type="radio" name="opt0" value="0"  class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+          <td> <label><input type="radio" name="opt1" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+          <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+          <td> <label><input type="radio" name="opt3" value="0" class="radioBtn" /><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+          <td> <label><input type="radio" name="opt4" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+     
+    </tbody>
+	
+  </table>
+  <!-- <div class="score"> -->
+    <p>PEOPLE MATURITY SCORE</p>   <input type="text" name="total" id="people" value="0" readonly="readonly" />
+  <!-- </div> -->
+</div>
+</form>
+
+
+<h5 class="head2 top1" ><img  class="ico" src="process-active.png" >PROCESS</h5>
+
+   
+    <div class="vl">
+      
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+	<form>
+    <tbody  class="question-ans" id="processSec">
+
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+         <td> <label><input type="radio" name="opt0" value="0"  class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+          <td> <label><input type="radio" name="opt1" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+          <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+          <td> <label><input type="radio" name="opt3" value="0" class="radioBtn" /><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+          <td> <label><input type="radio" name="opt4" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+     
+    </tbody>
+	
+  </table>
+  <!-- <div class="score"> -->
+    <p>PEOPLE MATURITY SCORE</p>   <input type="text" name="total" id="process" value="0" readonly="readonly" />
+  <!-- </div> -->
+</div>
+</form>
+
+
+<h5 class="head2 top1" ><img  class="ico" src="market-active.png" >MARKET</h5>
+
+    <div class="vl">
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+    <tbody class="question-ans" id="marketSec">
+	<form>
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+   <td> <label><input type="radio" name="opt0" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+         <td> <label><input type="radio" name="opt1" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+           <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+       <td> <label><input type="radio" name="opt3" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+       <td> <label><input type="radio" name="opt4" value="0" class="radioBtn" /><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+     
+    </tbody>
+    
+  </table>
+  <p>PEOPLE MATURITY SCORE</p> <input type="text" name="total" id="market" value="0" readonly="readonly" />
+</div>
+</form>
+
+
+<h5 class="head2 top1" ><img  class="ico" src="platform-active.png" >PLATFORM</h5>
+ <div class="vl">
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+    <tbody class="question-ans" id="platformSec">
+	<form>
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+         <td> <label><input type="radio" name="opt0" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+          <td> <label><input type="radio" name="opt1" value="0" class="radioBtn" /><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+           <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+         <td> <label><input type="radio" name="opt3" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+        <td> <label><input type="radio" name="opt4" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+     
+    </tbody>
+    
+  </table>
+  <p>PEOPLE MATURITY SCORE</p> <input type="text" name="total" id="platform" value="0" readonly="readonly" />
+</div>
+</form>
+
+
+
+<h5 class="head2 top1" ><img  class="ico" src="general-active.png">GENERAL</h5>
+
+   <div class="vl">
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+    <tbody class="question-ans" id="generalSec">
+	<form>
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+         <td> <label><input type="radio" name="opt0" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+         <td> <label><input type="radio" name="opt1" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+          <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+        <td> <label><input type="radio" name="opt3" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+       <td> <label><input type="radio" name="opt4" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+    
+    </tbody>
+    
+  </table>
+  <p>PEOPLE MATURITY SCORE</p> <input type="text" name="total" id="general" value="0" readonly="readonly" />
+</div>
+ </form>
+
+<h5 class="head2 top1 noborder"><img  class="ico" src="partnerships-active.png" >PARTNERSHIP</h5>
+
+    <div class="vl2">
+        <div class="sideHead">
+            Please indicate what level of maturity
+          </div>
+    <table class="table table-striped">
+  <thead>
+     <tr>
+        <td></td>
+        <td></td>
+        <td>None</td>
+        <td>Low</td>
+        <td>Medium</td>
+        <td>High</td>
+      </tr>
+    </thead>
+    <tbody class="question-ans" id="partnershipSec">
+	<form>
+        <tr>
+        <td>Q1.</td>
+        <td>Please indicate the comfortable level in the understanding of customer centricity and recognization on what it takes to achieve it?</td>
+       
+        <div class="radio">
+         <td> <label><input type="radio" name="opt0" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt0" value="1" class="radioBtn" /><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt0" value="3" class="radioBtn"/><span>3</span></label></td>
+       </div>
+        </tr>
+        <tr>
+        <td>Q2.</td>
+        <td>When it comes to implement to new changes such as new experience for a new touch point,and even innovations of digital solutions such as emerging technologies,how mature is your country adopting and deploying new changes?</td>
+         <div>
+       <td> <label><input type="radio" name="opt1" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt1" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt1" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+
+       <tr>
+        <td>Q3.</td>
+        <td>To what level of acumen are your country digital resources prepared drive both local and global digital strategies?</td>
+        <div>
+          <td> <label><input type="radio" name="opt2" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt2" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt2" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+       <tr> 
+      <td>Q4.</td>
+       <td>We have a lot of experience in our understanding,our customer needs and how we meet their demands.We tend to drive discussions with customers,conduct routine feedbacks from our clients and our proactive in creating solutions and recommendations to our clients.At what level are you in understanding these touch points?</td>
+       <div>
+         <td> <label><input type="radio" name="opt3" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt3" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt3" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+      
+      <tr>
+      <td>Q5.</td>
+      <td>What is the availability of quality digital experience does your country have as it relates to digital awareness,availability of quality digital training and expertise in digital of our resources?</td>
+      <div>
+        <td> <label><input type="radio" name="opt4" value="0" class="radioBtn"/><span>0</span></label></td>
+        <td>  <label><input type="radio" name="opt4" value="1" class="radioBtn"/><span>1</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="2" class="radioBtn"/><span>2</span></label></td>
+        <td> <label><input type="radio" name="opt4" value="3" class="radioBtn"/><span>3</span></label></td>
+        </div>
+      </tr>
+     
+    </tbody>
+
+  </table>
+  <p>PEOPLE MATURITY SCORE</p> <input type="text" name="total" id="partnership" value="0" readonly="readonly" />
+  <button class="btn">Next</button>
+</div>
+
+</div>
+
+</div>
+</form>
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="share10"><b>Cx Assessment</b></p>
+    <hr></hr>
+    <input type="text" id="fname" name="firstname" placeholder="Enter email">
+   
+    <table >
+    <tr><td><input type="checkbox" name="favorite1" value="chocolate" /> People</td><td><input type="checkbox" name="favorite1" value="chocolate" /> Platforms</td><tr><tr><td><input type="checkbox" name="favorite2" value="vanilla" /> Market</td><td><input type="checkbox" name="favorite1" value="chocolate" /> General</td></tr>
+  <tr><td><input type="checkbox" name="favorite3" value="mint" /> Process</td><td><input type="checkbox" name="favorite3" value="mint" /> Partnership</td></tr>
+  </table>
+  <div class="form-group text-right">
+         <button type = "button" class = "btn btn-default">Send</button>
+      </div> 
+ 
+  
+  
+
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+// $('.top1').click(function(){
+//   $(this).css('opacity', function(i,o){
+//       return parseFloat(o).toFixed(1) === '0.3' ? 1 : 0.3;
+//   });
+// });
+
+$('.top1').on('click', function(){
+    $('.active1').removeClass('active1 ');
+    $(this).addClass('active1');
+    
+});
+
+$( function() {
+  $( "#accordion" ).accordion();
+} );
+
+$('.btn').on('click',function(){
+ 
+  if ($("input[class='radioBtn']:checked").length == 30) {
+    window.open('file:///D:/something/Gtm_Accordion/mayura/mayura-d3complete/percent_calculator.html') ;
+  }
+  else
+  alert("one of div is empty");
+ 
+});
+
+
+</script>
+
+<script src="script1.js">
+
+
+</script>
+
+
+
+</body>
+</html>
